@@ -1,6 +1,10 @@
+Clone this reposritory
+Cd into the repository
+npm install 
+
 ## Getting Started
 
-run the development server:
+Run the development server:
 
 ```bash
 npm run dev
