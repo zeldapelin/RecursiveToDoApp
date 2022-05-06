@@ -49,9 +49,12 @@ const TodoItem = (props) => {
                     <button
                         className={cx(styles.button)}
                         onClick={() => {
-                            const newSubTasks = addEmptyItem(subTasks);
-                            task.subTasks = newSubTasks;
-                            didChangeTask(task);
+                            if(!subTasks[0] || subTasks[0].message){
+                                const newSubTasks = addEmptyItem(subTasks);
+                                task.subTasks = newSubTasks;
+                                didChangeTask(task);
+                            }
+                           
                         }}
                     >
                         Add subtask
