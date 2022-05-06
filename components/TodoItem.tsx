@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import cx from "classnames";
 // @ts-ignore
 import styles from "../styles/Home.module.css";
@@ -49,12 +48,11 @@ const TodoItem = (props) => {
                     <button
                         className={cx(styles.button)}
                         onClick={() => {
-                            if(!subTasks[0] || subTasks[0].message){
+                            if (!subTasks[0] || subTasks[0].message) {
                                 const newSubTasks = addEmptyItem(subTasks);
                                 task.subTasks = newSubTasks;
                                 didChangeTask(task);
                             }
-                           
                         }}
                     >
                         Add subtask
