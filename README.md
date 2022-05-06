@@ -1,5 +1,7 @@
 Clone this reposritory
+
 Cd into the repository
+
 npm install 
 
 ## Getting Started
